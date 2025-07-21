@@ -1,7 +1,12 @@
+# ── core (GPU cu118, Torch 2.1.2 pre‑installed) ──────────────────────
+numpy<2.0                       # avoid ABI break
 mmengine==0.10.4
 mmcv==2.1.0  -f https://download.openmmlab.com/ai/mmcv/dist/cu118/torch2.1/index.html
 mmdet==3.2.0
 mmpose==1.3.0
-gradio
+xtcocotools==1.14.0             # wheel compiled against NumPy 1.x
+
+# ── interface / I‑O ──────────────────────────────────────────────────
+gradio>=3.50
 opencv-python
 pandas
